@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Student Registration</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+</script>
+<script type="application/javascript" th:href="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+<link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"></link>
+<script type="application/javascript" th:href="@{/webjars/bootstrap/3.3.6/js/bootstrap.min.js}"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+<script type="application/javascript" src="static/js/cssandjs/studenttemplate.js"></script>
+</head>
+<body>
+	<p class="text-success" th:text="'Hello, ' + ${stu} + '!'"></p>
+    
+    <div class="row">
+    	<div class="col-md-4"></div>
+        <div class="col-md-4">
+        	<h3>Students</h3>
+        	<div th:id="allStudents"></div>
+			<button type="button" th:id="getstudents">Get the Students from Remote Server</button>
+			<div th:id="showStu" class="jumbotron">
+			 	<p th:each="stu : ${stu}">
+		            <span th:text="${stu.id}"> </span>
+		            <span th:text="${stu.name}"> </span>
+		   		</p> 
+			</div>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+   <div th:switch="${aString}">
+            <p th:case="differentCase">A different case</p>
+            <p th:case="*">The default case: <span th:text="${aString}"></span></p>
+        </div>
+	<p th:if="${truth}">Truth is true</p>
+        <p th:if="${theNumber == 33}">The number is 33</p>
+</body>
+</html> -->
